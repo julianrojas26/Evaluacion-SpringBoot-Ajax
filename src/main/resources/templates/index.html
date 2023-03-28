@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="public/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="scripts/index.js"></script>
+    <title>Formulario</title>
+</head>
+<body>
+	<form>
+	    <button type="button" id="button">Actualizar</button>
+	</form>
+	<table id="tabla">
+		<thead>
+			<th>Codigo</th>
+			<th>Nombre</th>
+			<th>Categoria</th>
+			<th>Precio</th>
+			<th>Cantidad</th>
+			<th>Total-Descuentos</th>
+			<th>Total</th>
+			<th>Total iva</th>
+		</thead>
+	</table>
+	<div id="search">
+		<label for="Search">Descuentos</label>
+		<label for="">Ingrese la categoria</label>
+		<input id="datoS" type="text" name="Search" placeholder="Buscar">
+		<button type="button" id="buscar">Buscar</button>
+	</div>
+	<table id="tabla2">
+		<thead>
+			<th>Codigo</th>
+			<th>Nombre</th>
+			<th>Categoria</th>
+			<th>Precio</th>
+			<th>Cantidad</th>
+			<th>total-descuento</th>
+		</thead>
+	</table>
+	<div id="search">
+		<label for="Update">Actualizar Producto</label>
+		<input id="Codigo3" type="text" name="Update" placeholder="Codigo Producto">
+		<label for="datos">Elija el dato a actualizar</label>
+		<select name="datos" id="dato">
+			<option value="null"></option>
+			<option value="direccion">nombre</option>
+			<option value="ciudad">categoria</option>
+			<option value="telefono">precio</option>
+			<option value="correo">cantidad</option>
+		</select>
+		<label for="new">Ingrese el dato nuevo</label>
+		<input id="nuevo" type="text" name="new" placeholder="Nuevo">
+		<button type="button" id="actualizar">Actualizar</button>
+	</div>
+	<table id="tabla3">
+		<thead>
+			<th>Codigo</th>
+			<th>Nombre</th>
+			<th>Categoria</th>
+			<th>Precio</th>
+			<th>Cantidad</th>
+			<th>Total</th>
+			<th>Total iva</th>
+		</thead>
+	</table>
+</body>
+</html>
