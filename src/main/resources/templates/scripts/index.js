@@ -43,7 +43,6 @@ $(document).ready((e) => {
       type: "PUT",
       datatype: "JSON",
       success: (res) => {
-        console.log(res);
         if (res) {
           res.forEach((u) => {
             table2.innerHTML +=
@@ -63,7 +62,7 @@ $(document).ready((e) => {
             console.log(u);
           });
         } else {
-          alert("Usuario no existe");
+          alert("Producto no existe");
         }
       },
     });
@@ -117,7 +116,6 @@ $(document).ready((e) => {
                   "</td><td>" +
                   u.total_iva +
                   "</td></tr>";
-                console.log(u);
             },
             datatype: "JSON",
           });
